@@ -1,0 +1,16 @@
+[
+  {
+    "nombre": "Producto 1",
+    "precio": 100,
+    "categoria": "General",
+    "disponible": true,
+    "stock": 10
+  },
+  {
+    "nombre": "Producto 2",
+    "precio": 200,
+    "categoria": "General",
+    "disponible": false,
+    "stock": 0
+  }
+]

@@ -1,0 +1,49 @@
+@api_url = http://localhost:3000
+
+### Verificar que la API funciona
+GET {{api_url}}/
+Accept: application/json
+
+###
+# ── CRUD Básico ──────────────────────────────────────────────────
+
+### GET todos  (← CAMBIAR ruta)
+GET {{api_url}}/api/productos
+Accept: application/json
+
+### GET todos con filtro por query
+GET {{api_url}}/api/productos?categoria=electronica
+Accept: application/json
+
+### GET por ID  (← reemplazá el id)
+GET {{api_url}}/api/productos/64a1b2c3d4e5f6a7b8c9d0e1
+Accept: application/json
+
+### GET con ID inexistente (debería dar 404)
+GET {{api_url}}/api/productos/000000000000000000000000
+Accept: application/json
+
+### POST crear nuevo  (← CAMBIAR campos según el Schema)
+POST {{api_url}}/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Laptop",
+  "precio": 1500,
+  "categoria": "electronica",
+  "disponible": true,
+  "stock": 10
+}
+
+### PUT actualizar  (← reemplazá el id)
+PUT {{api_url}}/api/productos/64a1b2c3d4e5f6a7b8c9d0e1
+Content-Type: application/json
+
+{
+  "precio": 1200,
+  "stock": 8
+}
+
+### DELETE eliminar  (← reemplazá el id)
+DELETE {{api_url}}/api/productos/64a1b2c3d4e5f6a7b8c9d0e1
+Accept: application/json
