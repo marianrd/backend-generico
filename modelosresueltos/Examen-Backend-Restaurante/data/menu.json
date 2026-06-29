@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1001,
+    "nombre": "Bruschetta de Tomate y Albahaca",
+    "descripcion": "Pan tostado con tomates frescos, ajo, albahaca y aceite de oliva virgen extra.",
+    "precio": 7.50,
+    "categoria": "Entrada"
+  },
+  {
+    "id": 1002,
+    "nombre": "Ensalada César",
+    "descripcion": "Lechuga romana, crutones, queso parmesano y aderezo César casero. Pollo opcional.",
+    "precio": 9.00,
+    "categoria": "Entrada"
+  },
+  {
+    "id": 1003,
+    "nombre": "Provoleta a la Parrilla",
+    "descripcion": "Queso provolone derretido a la parrilla con orégano y un toque de aceite de oliva.",
+    "precio": 8.50,
+    "categoria": "Entrada"
+  },
+  {
+    "id": 2001,
+    "nombre": "Bife de Chorizo",
+    "descripcion": "Corte clásico argentino de 350g a la parrilla, servido con papas fritas o ensalada.",
+    "precio": 18.00,
+    "categoria": "Plato Principal"
+  },
+  {
+    "id": 2002,
+    "nombre": "Risotto de Hongos",
+    "descripcion": "Arroz Arborio cremoso con una mezcla de hongos silvestres y aceite de trufa.",
+    "precio": 16.50,
+    "categoria": "Plato Principal"
+  },
+  {
+    "id": 2003,
+    "nombre": "Salmón a la Plancha con Vegetales",
+    "descripcion": "Filete de salmón fresco cocido a la plancha, acompañado de vegetales de estación salteados.",
+    "precio": 19.50,
+    "categoria": "Plato Principal"
+  },
+  {
+    "id": 2004,
+    "nombre": "Milanesa Napolitana",
+    "descripcion": "Carne de ternera apanada, cubierta con salsa de tomate, jamón y queso mozzarella.",
+    "precio": 15.00,
+    "categoria": "Plato Principal"
+  },
+  {
+    "id": 2005,
+    "nombre": "Pasta Carbonara",
+    "descripcion": "Spaghetti con una salsa cremosa de huevo, queso pecorino, panceta y pimienta negra.",
+    "precio": 14.00,
+    "categoria": "Plato Principal"
+  },
+  {
+    "id": 3001,
+    "nombre": "Flan Casero",
+    "descripcion": "Flan de huevo tradicional con caramelo, servido con dulce de leche o crema.",
+    "precio": 6.00,
+    "categoria": "Postre"
+  },
+  {
+    "id": 3002,
+    "nombre": "Tiramisú",
+    "descripcion": "Postre italiano clásico con capas de bizcocho, café, mascarpone y cacao.",
+    "precio": 7.00,
+    "categoria": "Postre"
+  },
+  {
+    "id": 3003,
+    "nombre": "Volcán de Chocolate",
+    "descripcion": "Pastel de chocolate tibio con centro líquido, acompañado de helado de vainilla.",
+    "precio": 7.50,
+    "categoria": "Postre"
+  },
+  {
+    "id": 4001,
+    "nombre": "Agua Mineral",
+    "descripcion": "Botella de 500ml, con o sin gas.",
+    "precio": 2.50,
+    "categoria": "Bebida"
+  },
+  {
+    "id": 4002,
+    "nombre": "Gaseosa",
+    "descripcion": "Línea Coca-Cola o Pepsi.",
+    "precio": 3.00,
+    "categoria": "Bebida"
+  },
+  {
+    "id": 4003,
+    "nombre": "Copa de Vino Malbec",
+    "descripcion": "Vino tinto de la casa, selección especial.",
+    "precio": 5.00,
+    "categoria": "Bebida"
+  },
+  {
+    "id": 4004,
+    "nombre": "Cerveza Artesanal",
+    "descripcion": "Consulta nuestras variedades de cerveza artesanal local.",
+    "precio": 6.50,
+    "categoria": "Bebida"
+  }
+] 

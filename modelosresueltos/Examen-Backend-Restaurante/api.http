@@ -1,0 +1,85 @@
+@api_url = http://localhost:3000
+
+###
+# TRABAJO INTEGRADOR: API de Menú de Restaurante
+#
+# Este archivo contiene ejemplos de solicitudes para probar todos los endpoints
+# de la API de platos.
+#
+# Para usarlo, asegúrate de tener la extensión "REST Client" en Visual Studio Code.
+#
+# NOTA: Los IDs y datos de los platos están basados en el archivo
+# `data/menu.json`. Ajusta los valores si modificas ese archivo.
+
+###
+# --- Endpoint de Población (Opcional) ---
+# Este endpoint borra la base de datos y la vuelve a poblar con los datos de `data/menu.json`.
+# ¡Usar con cuidado!
+GET {{api_url}}/platos/poblar
+Accept: application/json
+
+
+###
+# --- CRUD Básico ---
+
+### 1. Obtener todos los platos
+# Devuelve la lista completa de platos del menú.
+GET {{api_url}}/platos
+Accept: application/json
+
+### 2. Obtener un plato por su ID
+# Reemplaza '1001' con un ID de plato que exista en tu base de datos.
+GET {{api_url}}/platos/1001
+Accept: application/json
+
+### 2.1 Obtener un plato con un ID inexistente (debería dar 404)
+GET {{api_url}}/platos/99999
+Accept: application/json
+
+### 3. Crear un nuevo plato
+# Este endpoint agrega un nuevo plato al menú.
+# Asegúrate de que el 'id' sea único.
+POST {{api_url}}/platos
+Content-Type: application/json
+
+{
+    "id": 5001,
+    "nombre": "Pizza Margherita",
+    "descripcion": "Pizza clásica con salsa de tomate, mozzarella fresca y albahaca.",
+    "precio": 12.50,
+    "categoria": "Plato Principal"
+}
+
+### 4. Modificar un plato existente
+# Reemplaza '1001' con un ID de plato que exista.
+# Solo se necesita enviar los campos a modificar.
+PUT {{api_url}}/platos/1001
+Content-Type: application/json
+
+{
+    "precio": 8.00
+}
+
+### 5. Eliminar un plato
+# Reemplaza '1002' con un ID de plato que desees eliminar.
+DELETE {{api_url}}/platos/1002
+Accept: application/json
+
+
+###
+# --- Endpoints Adicionales ---
+
+### 6. Buscar platos por término
+# Busca platos que contengan 'carne' en su nombre o descripción.
+GET {{api_url}}/platos/buscar?q=carne
+Accept: application/json
+
+### 7. Filtrar platos por categoría
+# Busca platos que pertenezcan a la categoría 'Postre'.
+GET {{api_url}}/platos/categoria/Postre
+Accept: application/json
+
+### 8. Filtrar platos por rango de precio
+# Busca platos con precios entre 5 y 10.
+GET {{api_url}}/platos/precio/5-10
+Accept: application/json
